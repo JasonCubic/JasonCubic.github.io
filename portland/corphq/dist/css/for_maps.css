@@ -1,0 +1,297 @@
+@font-face {
+  font-family: iconFont;
+  src: url('fonts/glyphicons-halflings-regular.woff');
+}
+
+@font-face {
+  font-family: corpFont;
+  src: url('fonts/CorporateS-Regular.woff');
+}
+
+@font-face {
+  font-family: daimlerIconFace;
+  src: url('fonts/DTNA-Icon-Typeface.woff');
+}
+
+
+
+.description {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #222222;
+}
+
+div, img, footer {
+  position: relative;
+  box-sizing: border-box;
+}
+
+object h1, object h2, object h3, object h4, object h5, object h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: corpFont;
+  font-weight: 300;
+}
+
+
+
+
+.fillSizeH2 {
+  font-size: 1.7rem !important;
+}
+
+.mapdiv h3 {
+  font-size: 18pt;
+}
+
+.mapdiv h4 {
+  font-size: 16pt;
+}
+
+.mapdiv h5 {
+  font-size: 14pt;
+}
+
+.mapdiv h6 {
+  font-size: 12pt;
+}
+
+.mapdiv p {
+  font-size: 12pt;
+  margin-bottom: 12pt;
+  color: #404040;
+}
+
+.mapdiv strong {
+  font-weight: 900;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  color: #5097AB;
+}
+
+.mapdiv object a {
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5097ab;
+}
+.mapdiv a:visited {
+  color: #5097ab;
+}
+.mapdiv li.active a, a:hover, a:active {
+  color: #5097AB;
+}
+
+.mapdiv .content a {
+  display: block;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.mapdiv .left-align {
+  width: 100%;
+  text-align: left;
+  padding: 5px 15px;
+}
+.mapdiv .left-align h2 {
+  margin: 5px 0px 0px 0px;
+}
+.mapdiv .left-align p {
+  margin: 5px 0;
+}
+.mapdiv .distribution-map {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  /* padding-left: 0.9375rem !important;
+  padding-right: 0.9375rem !important;*/
+}
+.mapdiv .distribution-map > img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.mapdiv .distribution-map .map-point {
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  z-index: 0;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transition: opacity 0.2s ease-in-out 0.2s, width 0.2s ease-in-out 0.2s, height 0.2s ease-in-out 0.2s, z-index 0.2s ease-in-out 0.2s;
+  -o-transition: opacity 0.2s ease-in-out 0.2s, width 0.2s ease-in-out 0.2s, height 0.2s ease-in-out 0.2s, z-index 0.2s ease-in-out 0.2s;
+  -webkit-transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, z-index 0.2s ease-in-out;
+  -webkit-transition-delay: 0.2s, 0.2s, 0.2s, 0.2s;
+  -webkit-transition: opacity 0.2s ease-in-out 0.2s, width 0.2s ease-in-out 0.2s, height 0.2s ease-in-out 0.2s, z-index 0.2s ease-in-out 0.2s;
+  transition: opacity 0.2s ease-in-out 0.2s, width 0.2s ease-in-out 0.2s, height 0.2s ease-in-out 0.2s, z-index 0.2s ease-in-out 0.2s;
+  /**background: rgba(255, 255, 255, 1);**/
+  background: #2BADE3;
+  /**border: 5px solid #00BDF2;**/
+  /**box-shadow: 0px 0px 8px #2BADE3;**/
+  border: 0px solid #ffffff;
+  box-shadow: 0px 0px 3px #000000;
+  overflow: visible;
+}
+.mapdiv .distribution-map .map-point .content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: hidden !important;
+  min-width: 150px;
+}
+.mapdiv .distribution-map .map-point:active, .distribution-map .map-point:focus, .distribution-map .map-point:hover {
+  margin: 0;
+  padding: 0;
+  /filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  /**width: 305px; **/
+  /**height: 135px; **/
+  width: auto;
+  height: auto;
+  max-width:230px;
+  color: #222222;
+  z-index: 100;
+  -webkit-transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+/*  -webkit-transition:all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;*/
+background: rgba(255, 255, 255, 1);
+border-radius: 0px;
+box-shadow: 0px 2px 1px #000000;
+text-rendering: optimizeLegibility;
+border: 1px solid rgba(204, 204, 204, 0.3);
+}
+.mapdiv .distribution-map .map-point:active .content, .distribution-map .map-point:focus .content, .distribution-map .map-point:hover .content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: opacity 0.2s ease-in-out 0.2s, height 0.2s ease-in-out, overflow 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out 0.2s, height 0.2s ease-in-out, overflow 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out, overflow 0.2s ease-in-out;
+  /*-webkit-transition-delay: 0.2s, 0s, 0s;*/
+  -webkit-transition: opacity 0.2s ease-in-out 0.2s, height 0.2s ease-in-out, overflow 0.2s ease-in-out, background 0.1s ease-in-out;
+  transition: opacity 0.2s ease-in-out 0.2s, height 0.2s ease-in-out, overflow 0.2s ease-in-out;
+  overflow: hidden;
+  z-index: 100;
+}
+.mapdiv .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:hover .content a:hover, .distribution-map .map-point:focus .content a:active, .distribution-map .map-point:hover .content a:active {
+  color: #35788B;
+}
+
+
+
+.mapdiv .pulseradar {
+  border: 15px solid #2BADE3;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 50px;
+  width: 50px;
+  animation: pulse_animation_dots 2s ease-out;
+  -webkit-animation: pulse_animation_dots 2s ease-out;
+  -moz-animation: pulse_animation_dots 2s ease-out;
+  -o-animation: pulse_animation_dots 2s ease-out;
+  -ms-animation: pulse_animation_dots 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+}
+
+.mapdiv .distribution-map .map-point .pulseradar , .distribution-map .map-point .pulseradar {
+  opacity: 1;
+}
+
+.mapdiv .distribution-map .map-point:active .pulseradar , .distribution-map .map-point:focus .pulseradar, .distribution-map .map-point:hover .pulseradar {
+  opacity: 0;
+  animation: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+}
+
+@keyframes pulse_animation_dots {
+  0% { transform: scale(0); opacity: 0.0;}
+  25% { transform: scale(0); opacity: 0.1;}
+  50% { transform: scale(0.1); opacity: 0.3;}
+  75% { transform: scale(0.6); opacity: 0.7;}
+  100% { transform: scale(1.1); opacity: 0.0;}
+}
+
+
+@-o-keyframes pulse_animation_dots {
+  0% { -o-transform: scale(0); opacity: 0.0;}
+  25% { -o-transform: scale(0); opacity: 0.1;}
+  50% { -o-transform: scale(0.1); opacity: 0.3;}
+  75% { -o-transform: scale(0.6); opacity: 0.7;}
+  100% { -o-transform: scale(1.1); opacity: 0.0;}
+}
+
+@-ms-keyframes pulse_animation_dots {
+  0% { -ms-transform: scale(0); opacity: 0.0;}
+  25% { -ms-transform: scale(0); opacity: 0.1;}
+  50% { -ms-transform: scale(0.1); opacity: 0.3;}
+  75% { -ms-transform: scale(0.6); opacity: 0.7;}
+  100% { -ms-transform: scale(1.1); opacity: 0.0;}
+}
+
+@-moz-keyframes pulse_animation_dots {
+  0% { -moz-transform: scale(0); opacity: 0.0;}
+  25% { -moz-transform: scale(0); opacity: 0.1;}
+  50% { -moz-transform: scale(0.1); opacity: 0.3;}
+  75% { -moz-transform: scale(0.6); opacity: 0.7;}
+  100% { -moz-transform: scale(1.1); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulse_animation_dots {
+  0% { -webkit-transform: scale(0); opacity: 0.0;}
+  25% { -webkit-transform: scale(0); opacity: 0.1;}
+  50% { -webkit-transform: scale(0.1); opacity: 0.3;}
+  75% { -webkit-transform: scale(0.6); opacity: 0.7;}
+  100% { -webkit-transform: scale(1.1); opacity: 0.0;}
+}
+
+
+
+
+.mapdiv .distribution-map .map-point .content div {
+  padding: .5em .75em !important;
+}
+
+.mapdiv .distribution-map .special-label {
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0px;
+  box-shadow: 0px 2px 1px #000000;
+  text-rendering: optimizeLegibility;
+  border: 1px solid rgba(204, 204, 204, 0.3);
+}
+
+.mapdiv .distribution-map .special-label h2 {
+  font-size: 12px;
+  margin: 3px;
+}
+
+img#daimlerLogo {
+  /*margin-top: 1.5em;*/
+  z-index: 1;
+}

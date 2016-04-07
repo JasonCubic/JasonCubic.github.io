@@ -1,0 +1,66 @@
+/* note these styles may be duplicated in branding.less */
+
+#lightest-grey{
+	background-color: #f0f1f2;
+}
+
+#grey{
+	background-color: #d2d4d6;
+}
+
+#grey-lighter {
+	background-color: #e7e9ea;
+}
+
+#grey-light {
+	background-color: #dfe0e2;
+}
+
+#darker-grey {
+	background-color: #afb2b4;
+}
+
+#darkest-grey {
+	background-color: #8d8f92;
+}
+
+/* Styles for color chips on Icons and Branding */
+
+.colorchip {
+	height: 10rem;
+}
+
+.colorbox {
+	height: 80px;
+	width: 80px;
+	padding: 10px;
+	margin-right: 7px;
+	float: left;
+	text-align: center;
+	display: block;
+}
+
+.mobile_illustration {
+	width: 18rem;
+}
+
+.mobile_illustration > img {
+	height: 70%;
+}
+
+#table_1 {
+}
+
+#table_2 {
+	margin-left: 10rem;
+	margin-top: -25rem;
+}
+
+
+.formitemexample {
+	margin-top: 1em;
+}
+
+#range_display_unconstrained, #range_display_constrained {
+	margin: -1em 0 1em 0;
+}
